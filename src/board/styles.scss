@@ -1,0 +1,51 @@
+.board {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 750px;
+    height: 750px;
+    border: 25px solid #fff;
+
+    .row {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        height: 50px;
+
+        .tile {
+            display: flex;
+            flex: 0 1 auto;
+            justify-content: center;
+            align-items: center;
+            width: 50px;
+            height: 50px;
+            font-size: 18px;
+            font-weight: 900;
+
+            &.tw {
+                background: orange;
+                color: white;
+            }
+
+            &.dw {
+                background: yellow;
+                color: black;
+            }
+
+            &.tl {
+                background: navy;
+                color: white;
+            }
+
+            &.dl {
+                background: blue;
+                color: white;
+            }
+
+            &.blank {
+                background: #f3f3f3;
+                color: #bbb;
+            }
+        }
+    }
+}
